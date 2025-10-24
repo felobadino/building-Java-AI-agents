@@ -75,6 +75,11 @@ public class HelloWeatherAgent {
             .createSession(runner.appName(), "user1234")
             .blockingGet();
 
+        System.out.print("\n---------------------------------------------------------------------");
+        System.out.print("\nThis is my first AI agent in Java - It is a Weather Agent.           ");
+        System.out.print("\nAsk for the weather forecast for a given city: Write quit to exit.   ");
+        System.out.print("\n---------------------------------------------------------------------");
+
         try (Scanner scanner = new Scanner(System.in, UTF_8)) {
             while (true) {
                 System.out.print("\nYou > ");
